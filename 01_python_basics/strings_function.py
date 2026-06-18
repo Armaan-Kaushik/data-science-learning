@@ -47,4 +47,6 @@ print(" ".join(fruits))
 
 #Strip Function- to remove extra space
 name = "   Armaan   "
-print(name.strip()) 
+name.strip()  
+print(name)
+
