@@ -1,6 +1,9 @@
 items=["bread","pasta","fruits","veggies"]
 print(items)
 
+data = [1, "hello", 3.14, True]
+print(data)
+
 # # To access the element at certain index or a range of elements
 # print(items[0])
 # print(items[1])
@@ -35,6 +38,39 @@ print(len(items))
 # To check element in list
 print("bread" in items)
 print("coke" in items)
+
+# To add multiple items
+a = [1,2]
+b = [3,4]
+a.extend(b)
+print(a)
+
+# Removes by index
+numbers = [10,20,30]
+numbers.pop(1)
+print(numbers)
+
+# Sorting list in ascending and descending order using sort
+numbers = [5,2,8,1]
+numbers.sort()
+print(numbers)
+
+numbers.sort(reverse="True")
+print(numbers)
+
+
+# Sorted is used to create a new sorted list
+numbers = [5,2,8,1]
+new_list = sorted(numbers)
+print(new_list)
+
+# Useful built in functions 
+numbers = [10,20,30,40]
+print(sum(numbers))
+print(max(numbers))
+print(min(numbers))
+
+
 
 
 
