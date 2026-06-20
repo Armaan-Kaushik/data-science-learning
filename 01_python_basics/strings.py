@@ -66,3 +66,4 @@ s=s.replace('200','10').replace('banana','samosa')
 print(f'With one line replacing: {s}')
 
 
+
