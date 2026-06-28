@@ -23,19 +23,19 @@
 # #Exercise
 
 # # Write circle_calc() function that takes radius of a circle as an input from user and then it calculates and returns area, circumference and diameter. You should get these values in your main program by calling circle_calc function and then print them
-# import math
+import math
 
-# def circle_calc(radius):
-#     area=math.pi*(radius**2)
-#     circumference=2*math.pi*radius
-#     diameter=2*radius
-#     return area, circumference,diameter
+def circle_calc(radius):
+    area=math.pi*(radius**2)
+    circumference=2*math.pi*radius
+    diameter=2*radius
+    return area, circumference,diameter
 
-# if __name__=="__main__":
-#     r=input("Enter a radius:")
-#     r=float(r)
-#     area, c, d = circle_calc(r)
-#     print(f"area {area}, circumference {c}, diameter {d}")
+if __name__=="__main__":
+    r=input("Enter a radius:")
+    r=float(r)
+    area, c, d = circle_calc(r)
+    print(f"area {area}, circumference {c}, diameter {d}")
 
 
 
@@ -57,57 +57,57 @@
 # # remove: when user inputs remove it should ask for a country to remove. If country exist in our dictionary then remove it and print new dictionary using format shown above in (a). Else print that country doesn't exist!
 # # query: on this again ask user for which country he or she wants to query. When user inputs that country it will print population of that country
 
-# population={"china":143,"india":136,"usa":32,"pakistan":21}
 
-# def add():
-#     country=input("Enter the country name: ")
-#     country=country.lower()
-#     if country in population:
-#         print("Country already exist in our dataset. Terminating the search.")
-#         return
-#     p=float(input(f"Enter the population for {country}"))
-#     population[country]=p
-#     print_all()
+population={"china":143,"india":136,"usa":32,"pakistan":21}
+
+def add():
+    country=input("Enter the country name: ")
+    country=country.lower()
+    if country in population:
+        print("Country already exist in our dataset. Terminating the search.")
+        return
+    p=float(input(f"Enter the population for {country}"))
+    population[country]=p
+    print_all()
 
 
-# def remove():
-#     country=input("Enter the country name: ")
-#     country=country.lower()
-#     if country  not in population:
-#         print("Country does not exist in our dataset. Terminating the search.")
-#         return
-#     del population[country]
-#     print_all()
+def remove():
+    country=input("Enter the country name: ")
+    country=country.lower()
+    if country  not in population:
+        print("Country does not exist in our dataset. Terminating the search.")
+        return
+    del population[country]
+    print_all()
 
-# def query():
-#     country=input("Enter the country name to query: ")
-#     country=country.lower()
-#     if country  not in population:
-#         print("Country does not exist in our dataset. Terminating the search.")
-#         return
-#     print(f"population of {country} is: {population[country]}")
-#     print_all()
+def query():
+    country=input("Enter the country name to query: ")
+    country=country.lower()
+    if country  not in population:
+        print("Country does not exist in our dataset. Terminating the search.")
+        return
+    print(f"population of {country} is: {population[country]}")
+    print_all()
           
 
-# def print_all():
-#     for country,p in population.items():
-#          print(f'{country}==>{p}')
+def print_all():
+    for country,p in population.items():
+         print(f'{country}==>{p}')
 
 
-# def main():
-#     op=input("Enter operation(add, remove, query, print): ")
-#     if op.lower()=='add':
-#         add()
-#     if op.lower()=='remove':
-#         remove()
-#     if op.lower()=="query":
-#         query()
-#     if op.lower()=="print":
-#         print_all()
+def main():
+    op=input("Enter operation(add, remove, query, print): ")
+    if op.lower()=='add':
+        add()
+    if op.lower()=='remove':
+        remove()
+    if op.lower()=="query":
+        query()
+    if op.lower()=="print":
+        print_all()
 
-# if __name__=="__main__":
-#     main()
-
+if __name__=="__main__":
+    main()
 
 # You are given following list of stocks and their prices in last 3 days,
 # Stock	Prices
